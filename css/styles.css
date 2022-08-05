@@ -159,6 +159,15 @@ h2 {
     border-radius: 4px;
     margin-bottom: 10px;
     cursor: pointer;
+    width: 40%;
+    height: 150px;
+    vertical-align: middle;
+    margin: auto;
+    display: inline-block;
+}
+
+.shipping-section p {
+    font-size: 12px;
 }
 
 .shipping-section:hover {
@@ -171,9 +180,6 @@ h2 {
     border-radius: 4px;
 }
 
-.hidden p {
-    display: none;
-}
 
 .vip-notification {
     margin-top: 25px;
@@ -263,5 +269,6 @@ h2 {
 }
 
 #product-description {
-    color: var(--dark-gray)
+    color: var(--dark-gray);
+    
 }
