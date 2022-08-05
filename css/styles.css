@@ -119,19 +119,22 @@ h2 {
     font-size: 14px;
     font-weight:700;
     color: var(--green);
+    margin-bottom: 25px;
 }
 
 .in-stock-notification::after {
     content: ' | Usually ships in 24 hours';
     color: var(--dark-gray);
     font-weight: 400;
+    font-size: 12px;
 }
 
 .was-price {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: line-through;
     color: var(--light-gray);
-    padding: 10px 0 0;
+    margin-bottom: 25px;
+    align-self: flex-end;
 }
 
 .was-price::before {
@@ -144,7 +147,7 @@ h2 {
     font-weight: 700;
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    align-content: flex-start;
 }
 
 .price span {
@@ -155,6 +158,29 @@ h2 {
     font-size: 14px;
     border-radius: 4px;
     font-weight: 400;
+}
+
+.cost {
+}
+
+.affirm {
+    width: 45%;
+    align-self: flex-start;
+    position: relative;
+    font-size: 14px;
+}
+
+.affirm::before {
+    content: '-or-';
+    position: absolute;
+    left: -40px;
+    align-self: center;
+    vertical-align: middle;
+
+}
+
+.affirm a {
+    display: block;
 }
 
 .shipping-section {
@@ -193,6 +219,7 @@ h2 {
 .flex {
     display: flex;
     justify-content: space-between;
+    align-content: center;
 }
 
 .vip-notification {
@@ -205,6 +232,8 @@ h2 {
     border-radius: 4px;
     width: 15%;
     padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .product-actions {
@@ -223,7 +252,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items:center;
-    height: 55px;
+    height: 65px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: 700;
@@ -252,7 +281,6 @@ h2 {
 }
 
 #tabs {
-    background: var(--bg-gray);
     color: var(--dark-gray);
     display: flex;
     height: 75px;
@@ -282,7 +310,20 @@ h2 {
     cursor: pointer;
 }
 
-#product-description {
+.product-description {
     color: var(--dark-gray);
-    margin-top: 25px;
+    background-color: var(--white);
+    padding: 0 25px;
 }
+
+.hide {
+    display: none;
+}
+
+.product-copy {
+    margin-top: 25px;
+    line-height: 1.75em;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--light-gray);
+}
+

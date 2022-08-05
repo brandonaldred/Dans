@@ -12,7 +12,7 @@
 <body>
     <div id="product-content">
         <header>
-        
+
         </header>
         <section class="product-heading">
             <p class="breadcrumb"><a href="#">Bikes</a> / <a href="#">Freestyle</a> / <a href="#">20" Wheels</a></p>
@@ -37,8 +37,16 @@
                 <h2>Select Size:</h2> 
             </div> -->
             <p class="in-stock-notification">In Stock Online</p>
-            <p class="was-price">$449.99</p>
-            <p class="price">$379.99 <span>Sale | Save 16%</span></p>
+            <div class="pricing-info flex">
+                <div class="cost">
+                    <p class="price">$379.99 <span>Sale | Save 16%</span></p>
+                    <p class="was-price">$449.99</p>
+                </div>
+                <div class="affirm flex">
+                    <a class="affirm-as-low-as" >
+                    <a aria-label="Starting at $62/month with Affirm. Prequalify now about Affirm Financing (opens in modal)" href="javascript:void(0)">Starting at <span class="affirm-ala-price">$62</span>/month with <span class="__affirm-logo __affirm-logo-blue __ligature__affirm_full_logo__ __processed">Affirm</span>.<u>Prequalify now</u></a></a>
+                </div>
+            </div>
             <div class="flex">
                 <div class="shipping-section">
                     <h3>Ship it to me</h3>
@@ -46,47 +54,60 @@
                 </div>
                 <div class="shipping-section hidden">
                     <h3>Pick up in-store</h3>
-                    <p>Available for Buy & Pick up at AMain Cycling Chico in Chico, CA <a href="#">Change location</a></p>
+                    <p>Available for Buy & Pick up at AMain Cycling Chico in Chico, CA <a href="#">Change location</a>
+                    </p>
                 </div>
             </div>
             <p class="vip-notification">Members earn up to <b>380</b> VIP Rewards Points on this item.</p>
             <div class="product-actions">
-                <input class="product-qty" type="number" /><a class="add-to-cart-button" href="%addCart" />Add to Cart</a>
+                <input class="product-qty" type="number" value="1" /><a class="add-to-cart-button" href="%addCart" />Add
+                to Cart</a>
                 <a class="add-to-wishlist-button" href="%addWishlist%" />Add to Wishlist</a>
             </div>
         </section>
-        <div id="tabs">
-            <h2 class="selected-tab">Overview</h2>
-            <h2>Specifications</h2>
-            <h2>Reviews</h2>
-        </div>
-        <div id="product-description">
-            <div id="overview">
-                <h2>Description</h2>
-                <p>The 2022 Sunday Blueprint 20.5" BMX Bike is an entry level bike that utilizes pro-style geometry and a durable construction to help new riders develop skills and techniques for shredding with friends. Components such as the Odyssey Springfield brakes, FSA integrated headset, and 3-piece chromoly cranks create a bike that is reliable meaning more riding and less downtime. The Sunday Blueprint is built for beginners to promote growth and learning.</p>
-                <h3>Specifications:</h3>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div>
-                    <h3>Need help building your bike?</h3>
-                    <p><span>NOTE:</span> To ensure that every component on your bicycle is working properly, Dans Comp
-                        recommends that all bikes be assembled by a qualified mechanic. Improper assembly of your
-                        bicycle may lead to premature wear or failure of individual components such as headsets, crank
-                        assembly and wheels. Failure to do so may void the manufacturer warranty.</p>
+        <section class="product-description">
+            <div id="tabs">
+                <h2 class="selected-tab">Overview</h2>
+                <h2>Specifications</h2>
+                <h2>Reviews</h2>
+            </div>
+            <div>
+                <div id="overview" class="product-copy">
+                    <h2>Description</h2>
+                    <p>The 2022 Sunday Blueprint 20.5" BMX Bike is an entry level bike that utilizes pro-style geometry
+                        and
+                        a durable construction to help new riders develop skills and techniques for shredding with
+                        friends.
+                        Components such as the Odyssey Springfield brakes, FSA integrated headset, and 3-piece chromoly
+                        cranks create a bike that is reliable meaning more riding and less downtime. The Sunday
+                        Blueprint is
+                        built for beginners to promote growth and learning.</p>
+                </div>
+                <div id="specs" class="hide product-copy">
+                    <h2>Specifications:</h2>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="reviews" class="hide product-copy">
+                    <h2>Product Reviews</h2>
+                </div>
+                <div id="notes" class="product-copy">
+                    <h2>Need help building your bike?</h2>
+                    <p>To ensure that every component on your bicycle is working properly, Dans Comp recommends that all
+                        bikes be assembled by a qualified mechanic. Improper assembly of your bicycle may lead to
+                        premature wear or failure of individual components such as headsets, crank assembly and wheels.
+                        Failure to do so may void the manufacturer warranty.</p>
                 </div>
             </div>
-            <div id="reviews">
-                <h2>Product Reviews</h2>
-            </div>
-        </div>
-        </div>
-        <div id="related-products"></div>
-        <div id="also-purchased"></div>
+        </section>
+    </div>
+    <div id="related-products"></div>
+    <div id="also-purchased"></div>
     </div>
 </body>
 
